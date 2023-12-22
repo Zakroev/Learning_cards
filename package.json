@@ -1,39 +1,42 @@
 {
-	"name": "pet-project",
-	"version": "0.1.0",
-	"private": true,
-	"scripts": {
-		"dev": "next dev",
-		"build": "next build",
-		"start": "next start",
-		"test": "",
-		"lint:fix": "eslint ./src --ext .jsx,.js,.ts,.tsx --quiet --fix --ignore-path ./.gitignore",
-		"lint:format": "prettier  --loglevel warn --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\" ",
-		"lint": "yarn lint:format && yarn lint:fix ",
-		"postinstall": "husky install"
-	},
-	"dependencies": {
-		"next": "14.0.4",
-		"react": "^18",
-		"react-dom": "^18"
-	},
-	"devDependencies": {
-		"@types/node": "^20",
-		"@types/react": "^18",
-		"@types/react-dom": "^18",
-		"@typescript-eslint/eslint-plugin": "^6.4.0",
-		"eslint": "^8.0.1",
-		"eslint-config-next": "14.0.4",
-		"eslint-config-prettier": "^9.1.0",
-		"eslint-config-standard-with-typescript": "^43.0.0",
-		"eslint-plugin-import": "^2.29.1",
-		"eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
-		"eslint-plugin-promise": "^6.0.0",
-		"eslint-plugin-react": "^7.33.2",
-		"husky": "^8.0.0",
-		"prettier": "3.1.1",
-		"stylelint": "^16.0.2",
-		"stylelint-config-standard": "^35.0.0",
-		"typescript": "*"
-	}
+  "name": "pet-project",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "",
+    "eslint": "eslint ./src --ext .jsx,.js,.ts,.tsx --quiet --fix --ignore-path ./.gitignore",
+    "prettier": "prettier  --loglevel warn --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\" ",
+    "lint": "yarn prettier && yarn eslint ",
+    "stylelint": "stylelint \"./**/*.{css,scss}\" --fix",
+    "postinstall": "husky install"
+  },
+  "dependencies": {
+    "next": "14.0.4",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "eslint": "^8.0.1",
+    "eslint-config-next": "14.0.4",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-standard-with-typescript": "^43.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+    "eslint-plugin-prettier": "^5.1.1",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "husky": "^8.0.0",
+    "prettier": "3.1.1",
+    "stylelint": "^16.0.2",
+    "stylelint-config-standard": "^35.0.0",
+    "typescript": "*"
+  }
 }
