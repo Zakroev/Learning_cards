@@ -10,7 +10,8 @@
     "eslint": "eslint ./src --ext .jsx,.js,.ts,.tsx --quiet --fix --ignore-path ./.gitignore",
     "prettier": "prettier  --loglevel warn --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\" ",
     "lint": "yarn prettier && yarn eslint ",
-    "stylelint": "stylelint \"./**/*.{css,scss}\" --fix",
+    "style-check": "stylelint \"./**/*.{css,scss}\"",
+    "style-fix": "stylelint \"./**/*.{css,scss}\" --fix",
     "postinstall": "husky install"
   },
   "dependencies": {
@@ -37,6 +38,7 @@
     "prettier": "3.1.1",
     "stylelint": "^16.0.2",
     "stylelint-config-standard": "^35.0.0",
+    "stylelint-config-standard-scss": "^12.0.0",
     "stylelint-order": "^6.0.4",
     "typescript": "*"
   }
